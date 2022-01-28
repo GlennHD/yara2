@@ -1,4 +1,4 @@
-rule Win32_Ransomware_Ackback : test_detection malicious
+rule test1yara : test1yara
 {
 	meta:
 		author = "GlennHD"
@@ -6,8 +6,8 @@ rule Win32_Ransomware_Ackback : test_detection malicious
 		status = "RELEASED"
 		sharing = "TLP:WHITE"
 		category = "MALWARE"
-		malware = "ACKBACK"
-		description = "Yara rule that detects ACKBACK ransomware test."
+		malware = "test1yara"
+		description = "Yara rule that detects test1yara"
 
 	strings:
 		$main_routine = {
