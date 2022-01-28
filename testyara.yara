@@ -1,19 +1,20 @@
-rule test_yara_modded_gmb : GMB
+rule Win32_Ransomware_Ackback : test_detection malicious
 {
 	meta:
-		author = "AuthorMan"
+		author = "GlennHD"
 		source = "GlennHD"
 		status = "RELEASED"
 		sharing = "TLP:WHITE"
-		categiry - "MALWARE"
-		description = "Just a test YARA"
-		reports = "CSA-220050"
-		last_modified = "2022-01-21"
-		malware_family = "Malwares"
+		category = "MALWARE"
+		malware = "ACKBACK"
+		description = "Yara rule that detects ACKBACK ransomware test."
 
 	strings:
-		$a = { 64 A3 00 00 00 00 }
-		$b = { 64 89 25 00 00 00 00 }
+		$main_routine = {
+
+            8D 55 ?? B8 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 55 ?? B8 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8D 55 
+
+        }
 
 	condition:
 		all of them
