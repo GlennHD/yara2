@@ -1,4 +1,4 @@
-rule test1yara : test1yara
+rule test1yararule : test1yararule
 {
 	meta:
 		author = "GlennHD"
@@ -7,7 +7,7 @@ rule test1yara : test1yara
 		sharing = "TLP:WHITE"
 		category = "MALWARE"
 		malware = "test1yara"
-		description = "Yara rule that detects test1yara"
+		description = "Yara rule that detects test1yara rule"
 
 	strings:
 		$main_routine = {
