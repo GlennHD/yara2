@@ -1,4 +1,4 @@
-rule test1rule : test1rule
+rule testpub : testpub
 {
 	meta:
 		author = "GlennHD"
@@ -6,12 +6,12 @@ rule test1rule : test1rule
 		status = "RELEASED"
 		sharing = "TLP:WHITE"
 		category = "MALWARE"
-		malware = "test1yara"
-		description = "Yara rule that detects test1yara rule"
+		malware = "testpub"
+		description = "Yara rule that detects testpub rule"
 
 	strings:
 		$main_routine = {
-			AA BB CC EE FF 
+			AA BB CC EE FF 00 11 22 33 44 55 66 77 88 99 00
 		}
 		$a_string_thing = "here be a string yarrrrrr"
 
