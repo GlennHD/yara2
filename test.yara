@@ -13,6 +13,7 @@ rule test1rule : test1rule
 		$main_routine = {
 			AA BB CC EE FF 
 		}
+		$a_string_thing = "here be a string yarrrrrr"
 
 	condition:
 		all of them
