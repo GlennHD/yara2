@@ -12,9 +12,8 @@ rule test_yara_modded_gmb : GMB
 		malware_family = "Malwares"
 
 	strings:
-		$ = "abcdefghijklmnop"
-		$ = "qrstuvwxyz"
-
+		$a = { 64 A3 00 00 00 00 }
+		$b = { 64 89 25 00 00 00 00 }
 
 	condition:
 		all of them
