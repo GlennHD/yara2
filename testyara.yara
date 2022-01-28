@@ -10,7 +10,6 @@ rule test_yara_modded_gmb : GMB
 		categiry - "MALWARE"
 		description = "Just a test YARA"
 		reports = "CSA-220050"
-    modified_by = "GlennHD"
 		last_modified = "2022-01-21"
 		malware_family = "Malwares"
 
