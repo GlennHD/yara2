@@ -12,7 +12,7 @@ rule test1rule : test1rule
 	strings:
 		$main_routine = {
 			AA BB CC EE FF 
-        }
+		}
 
 	condition:
 		all of them
