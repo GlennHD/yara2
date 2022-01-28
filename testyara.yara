@@ -1,5 +1,3 @@
-import pe32
-
 rule test_yara_modded_gmb : GMB
 {
 	meta:
